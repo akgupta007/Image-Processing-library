@@ -1,0 +1,20 @@
+
+Compilation : run "make" command
+This will create an executable "a.out".
+
+Execution:
+For any guide in run time, run executable file followed by "help".
+eg: ./a.out help
+This will print required help.
+
+Syntax for inputs:
+Convolution: ./a.out txtfile matrix_size convolution type kernel_matrix_file kernel_size padding_size stride_length
+Activation: ./a.out txtfile matrix_size relu/tanh
+Sampling: ./a.out txtfile matrix_size subsample_average/subsample_max sample_size stride_length
+Softmax: ./a.out txtfile vector_size softmax
+
+type : simple/toep_iter/toep_mkl/toep_blas/pthreads.
+
+First nxn lines are for matrix value.
+Next kernel_size x kernel_size are for kernel values.
+
